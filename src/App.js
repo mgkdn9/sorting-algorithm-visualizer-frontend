@@ -1,6 +1,6 @@
 // import React, { Component, Fragment } from 'react'
 import React, { useState, Fragment } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 // import AuthenticatedRoute from './components/shared/AuthenticatedRoute'
 import Header from "./components/shared/Header";
@@ -47,15 +47,20 @@ const App = () => {
     }
     return array;
   }
-  // funtion for regenerating random number array
+  // funtion for regenerating random number array which just reloads the page
   function regenerate() {
-    // let array = []
-    // for(let i=0; i<length; i++){
-    //   array.push(Math.floor(Math.random()*(max-min) + min))
-    // }
+  const deployedUrl = "https://mgkdn9.github.io/sorting-algorithm-visualizer-frontend";
+  const currentUrl = window.location.href;
+
+  if (currentUrl.includes("localhost")) {
+    // Running locally, reload current page
     window.location.reload(false);
-    // return array
+  } else {
+    // Otherwise, navigate to deployed URL
+    window.location.href = deployedUrl;
   }
+}
+
 
   // helper function for swapping items in an array
   function swap(array, index1, index2) {
@@ -327,6 +332,7 @@ const App = () => {
           }
         />
         <Route path="/my-scores" element={<MyScores user={user} />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Fragment>
   );
