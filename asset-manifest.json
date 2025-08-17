@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sorting-algorithm-visualizer-frontend/static/css/main.6115805e.chunk.css",
-    "main.js": "/sorting-algorithm-visualizer-frontend/static/js/main.a025a420.chunk.js",
-    "main.js.map": "/sorting-algorithm-visualizer-frontend/static/js/main.a025a420.chunk.js.map",
+    "main.js": "/sorting-algorithm-visualizer-frontend/static/js/main.b89c5333.chunk.js",
+    "main.js.map": "/sorting-algorithm-visualizer-frontend/static/js/main.b89c5333.chunk.js.map",
     "runtime-main.js": "/sorting-algorithm-visualizer-frontend/static/js/runtime-main.fe0d6071.js",
     "runtime-main.js.map": "/sorting-algorithm-visualizer-frontend/static/js/runtime-main.fe0d6071.js.map",
     "static/css/2.375c030d.chunk.css": "/sorting-algorithm-visualizer-frontend/static/css/2.375c030d.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.375c030d.chunk.css",
     "static/js/2.177545b8.chunk.js",
     "static/css/main.6115805e.chunk.css",
-    "static/js/main.a025a420.chunk.js"
+    "static/js/main.b89c5333.chunk.js"
   ]
 }
